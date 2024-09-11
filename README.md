@@ -1,1 +1,1 @@
-this repo contains all the code i wrote while learning full stack web development .
+this repo contains all the code i wrote while revising full stack web development .
