@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TinDog</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Title -->
+    <section id="title" class="gradient-background">
+      <div class="container col-xxl-8 px-4 pt-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="./images/iphone.png"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="300px"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3 text-dark">
+              Meet new and interesting dogs nearby.
+            </h1>
+            <p class="lead text-dark fw-semibold">
+              The perfect place for dog owners to connect their pets with
+              potential playmates. Create a profile, browse local dogs, and set
+              up fun playdates to help your furry friend make new friends!"
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn border-5 btn-light btn-lg px-4 me-md-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-apple mb-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"
+                  />
+                  <path
+                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"
+                  />
+                </svg>
+                Download
+              </button>
+              <button type="button" class="btn border-5 btn-outline-light btn-lg px-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-google-play mb-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27"
+                  />
+                </svg>
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section id="features">
+      <div class="container px-4 py-5" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('unsplash-photo-1.jpg')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-black text-shadow-1 bg-primary bg-gradient"
+              >
+                <img
+                  src="./images/check.svg"
+                  alt="Bootstrap"
+                  width="40"
+                  height="40"
+                  class="rounded-circle border border-dark border-3"
+                  style="background-color: white"
+                />
+
+                <h3 class="pt-5 mb-4 display-6 lh-1 fw-bold">Easy to use</h3>
+                <blockquote class="blockquote fw-semibold">
+                  <p>So easy to use, even your dog could do it.</p>
+                </blockquote>
+                <ul class="d-flex list-unstyled mt-auto"></ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('unsplash-photo-1.jpg')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-black text-shadow-1 bg-success bg-gradient"
+              >
+                <img
+                  src="./images/cap.svg"
+                  alt="Bootstrap"
+                  width="40"
+                  height="40"
+                  class="rounded-circle border border-dark border-3"
+                  style="background-color: white"
+                />
+
+                <h3 class="pt-5 mb-4 display-6 lh-1 fw-bold">
+                  Elite Clientele.
+                </h3>
+                <blockquote class="blockquote fw-semibold">
+                  <p>We have all the dogs, the greatest dogs.</p>
+                </blockquote>
+                <ul class="d-flex list-unstyled mt-auto"></ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('unsplash-photo-1.jpg')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-black text-shadow-1 bg-danger bg-gradient"
+              >
+                <img
+                  src="./images/heart.svg"
+                  alt="Bootstrap"
+                  width="40"
+                  height="40"
+                  class="rounded-circle border border-dark border-3"
+                  style="background-color: white"
+                />
+
+                <h3 class="pt-5 mb-4 display-6 lh-1 fw-bold">
+                  Guaranteed to work.
+                </h3>
+                <blockquote class="blockquote fw-semibold">
+                  <p>Find the love of your dog's life or your money back.</p>
+                </blockquote>
+                <ul class="d-flex list-unstyled mt-auto"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial -->
+    <section id="testimonial">
+      <div class="p-5 text-center bg-body-tertiary">
+        <div class="container py-5">
+          <h2 class="text-body-emphasis">"I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof."</h2>
+          <img class="profile-img mt-5 mb-5" src="./images/dog-img.jpg" alt="dog image">
+          <p class="col-lg-8 mx-auto lead">
+            Pebbles, New York
+          </p>
+          <div class="row">
+            <div class="col-lg-3 col-sm-12">
+              <img src="./images/techcrunch.png" alt="techcrunch" height="30">
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <img src="./images/mashable.png" alt="mashable" height="30">
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <img src="./images/bizinsider.png" alt="bizinsider" height="30">
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <img src="./images/tnw.png" alt="tnw" height="30">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing -->
+    <section id="pricing">
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal text-light">
+          A Plan for Every Dog's Needs
+        </h1>
+        <p class="fs-5 text-light">
+          Simple and affordable price plans for you and your dog.
+        </p>
+      </div>
+      <div class="container py-3">
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="rounded-3 card mb-4 rounded-3 shadow-sm border-danger border-5">
+                <div class="card-header border-5 border-danger py-3">
+                  <h4 class="my-0 fw-bold">Chihuahua</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    ₹ 0<small class="text-body-secondary fw-light">/mo</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>5 Matches Per Day</li>
+                    <li>10 Messages Per Day</li>
+                    <li>Unlimited App Usage</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-danger">
+                    Sign up for free
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="rounded-3 card mb-4 rounded-3 shadow-sm border-primary border-5">
+                <div class="card-header border-5 border-primary py-3">
+                  <h4 class="mb-0 fw-bold">Labrador</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    ₹ 750<small class="text-body-secondary fw-light">/mo</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Unlimited Matches</li>
+                    <li>Unlimited Messages</li>
+                    <li>Unlimited App Usage</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">
+                    Get started
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="rounded-3 card mb-4 shadow-sm  border-success border-5">
+                <div class="card-header py-3 text-bg-success rounded-0 border-5 border-success">
+                  <h4 class="my-0 fw-bold">Mastiff</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    ₹ 1100<small class="text-body-secondary fw-light">/mo</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Pirority Listing</li>
+                    <li>Unlimited Matches & Messages</li>
+                    <li>Unlimited App Usage</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-success">
+                    Contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="display-6 text-center mb-4 text-light">Compare plans</h2>
+
+          <div class="table-responsive">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th style="width: 34%"></th>
+                  <th style="width: 22%">Chihuahua</th>
+                  <th style="width: 22%">Labrador</th>
+                  <th style="width: 22%">Mastiff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Unlimited App Usage</th>
+                  <td>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      fill="currentColor"
+                      class="bi bi-check-lg text-success"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                      />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      fill="currentColor"
+                      class="bi bi-check-lg text-success"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                      />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      fill="currentColor"
+                      class="bi bi-check-lg text-success"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Unlimited Messages</th>
+                  <td></td>
+                  <td>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      fill="currentColor"
+                      class="bi bi-check-lg text-success"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                      />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      fill="currentColor"
+                      class="bi bi-check-lg text-success"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Unlimited Matches</th>
+                  <td></td>
+                  <td>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      fill="currentColor"
+                      class="bi bi-check-lg text-success"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                      />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      fill="currentColor"
+                      class="bi bi-check-lg text-success"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Priority Listing</th>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      fill="currentColor"
+                      class="bi bi-check-lg text-success"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section id="footer" class="bg-dark">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md">
+              <h5 class="text-light">Features</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Cool stuff</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Random feature</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Team feature</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Stuff for developers</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Another one</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Last time</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 class="text-light">Resources</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Resource</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Resource name</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Another resource</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Final resource</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 class="text-light">About</h5>
+              <ul class="list-unstyled text-small text-dark-subtle">
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Team</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Locations</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Privacy</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="link-secondary text-decoration-none" href="#"
+                    >Terms</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5 class="text-light">Subscribe to our newsletter</h5>
+                <p class="text-light">
+                  Monthly digest of what's new and exciting from us.
+                </p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden"
+                    >Email address</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <button class="btn btn-success" type="button">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+          >
+            <p class="text-light">© 2024 Tindog.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><svg class="bi" width="24" height="24">
+                    <use xlink:href="#twitter"></use></svg></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><svg class="bi" width="24" height="24">
+                    <use xlink:href="#instagram"></use></svg></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><svg class="bi" width="24" height="24">
+                    <use xlink:href="#facebook"></use></svg></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>
