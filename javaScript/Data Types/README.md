@@ -1,1 +1,0 @@
-this file contains all the js code i practiced.
