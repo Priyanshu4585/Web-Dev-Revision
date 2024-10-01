@@ -1,0 +1,81 @@
+/* h1{
+color : red;
+text-align: center;
+} */
+/* div{
+    background-color: blue;
+}
+.class{
+    color: palevioletred;
+}
+button{
+    background-color: blanchedalmond;
+}
+p{
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+}
+#a {
+    font-weight: normal ;
+    font-family: monospace;
+}
+#ab {
+    font-weight: bold ;
+    font-family: fantasy;
+}
+#abc {
+    font-weight: bolder ;
+    font-family: sans-serif;
+}
+#abcd {
+    font-weight: lighter ;
+    font-family: serif ;
+} */
+/* h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+*{
+    font-family:'Times New Roman' ;
+}
+#outer{
+ font-size: 25px;
+
+}
+#inner{
+    font-size: 20px;
+
+} */
+/* div{
+border: 10px;
+text-align: center;
+border-color: aqua;
+border-style: double;
+font-size: 20px;
+border-radius:  40px;
+}
+h1{
+text-align: center;
+border: 4px dotted black;
+} */
+
+div{
+    background-color: #0f1111;
+    height: 60px;
+    color: aliceblue;
+    
+}
+
+#amazon{
+    font-size: 25px;
+    color: orange;
+}
+a{
+margin-right: 180px;
+text-decoration: none;
+color: aliceblue;
+}
+button{
+    background-color: #f08844;
+}
