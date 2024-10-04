@@ -1,0 +1,16 @@
+{
+  "name": "get-method",
+  "version": "1.0.0",
+  "main": "get.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "priyanshu",
+  "license": "ISC",
+  "description": "using get method in expres",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
