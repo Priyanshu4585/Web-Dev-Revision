@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>jokes using API</title>
+  </head>
+  <body>
+    <form action="/submit" method="post">
+        <h1>Select a Category:</h1><br />
+      <div id="selectCategory">
+       <div>   
+        <input
+        type="radio"
+        name="radioCategory"
+        value="any"
+        id="any"
+        onclick="toggleCheckboxes()"
+       />
+      <label class="category" for="any">Any</label>
+      </div>
+
+<div>
+    <input
+    type="radio"
+    name="radioCategory"
+    value="customize"
+    id="customize"
+    onclick="toggleCheckboxes()"
+  />
+  <label class="category" for="customize">Customize</label>
+  <div id="customChkbox">
+    <span>
+        <input
+          type="checkbox"
+          name="categories[]"
+          id="programming"
+          value="programming"
+          disabled
+        />
+        <label for="programming">Programming</label>
+      </span>
+    
+      <span>
+        <input
+          type="checkbox"
+          name="categories[]"
+          id="miscellaneous"
+          value="Miscellaneous"
+          disabled
+        />
+        <label for="miscellaneous">Miscellaneous</label>
+      </span>
+    
+      <span>
+        <input
+          type="checkbox"
+          name="categories[]"
+          id="dark"
+          value="dark"
+          disabled
+        />
+        <label for="dark">Dark</label>
+      </span>
+    
+      <span>
+        <input
+          type="checkbox"
+          name="categories[]"
+          id="pun"
+          value="pun"
+          disabled
+        />
+        <label for="pun">Pun</label>
+      </span>
+    
+      <span>
+        <input
+          type="checkbox"
+          name="categories[]"
+          id="spooky"
+          value="Spooky"
+          disabled
+        />
+        <label for="spooky">Spooky</label>
+      </span>
+    
+      <span>
+        <input
+          type="checkbox"
+          name="categories[]"
+          id="christmas"
+          value="Christmas"
+          disabled
+        />
+        <label for="christmas">Christmas</label>
+      </span>
+  </div>
+
+</div>
+      </div>
+      <h1>
+        <% if(locals.joke){ %>
+        <pre><%= joke %></pre>
+        <% } %>
+      </h1>
+      <button type="submit">Click</button>
+    </form>
+
+    <script>
+      function toggleCheckboxes() {
+        const customizeChecked = document.getElementById("customize").checked;
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+        checkboxes.forEach((checkbox) => {
+          checkbox.disabled = !customizeChecked;
+        });
+      }
+    </script>
+  </body>
+</html>
