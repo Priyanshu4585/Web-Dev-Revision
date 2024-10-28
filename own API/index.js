@@ -35,6 +35,19 @@ app.get(`/filter`,(req,res)=>{
 })
 
 //4. POST a new joke
+app.post("/jokes",(req,res)=>{
+const joke = {
+    id: jokes.length + 1,
+    jokeText: req.body.text,
+    jokeType: req.body.type,
+  }
+
+ jokes.push(joke);
+
+ res.status(201).json({
+  message: "Operation successful",
+  joke: joke,
+});
 
 //5. PUT a joke
 
