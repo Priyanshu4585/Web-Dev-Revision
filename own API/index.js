@@ -80,7 +80,21 @@ res.status(200).json(patchedjoke)
 })
   
 //7. DELETE Specific joke
+app.use("/jokes/:id",(req,res)=>{
+  const id = parseInt(req.params.id);
+  const index = jokes.findIndex((joke)=>{
+    joke.id===id
+  })
 
+if(index>-1){
+jokes.splice(index,1);
+res.sendStatus(200)
+}else{
+res.status(400).json({error:`joke with id ${id} wasn't found.
+  No jokes were deleted.`})
+
+}
+})
 //8. DELETE All jokes
 
 app.listen(port, () => {
