@@ -1,0 +1,14 @@
+{
+  "name": "postgresql",
+  "version": "1.0.0",
+  "description": "code to implement postgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "priyanshu singh",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.13.1"
+  }
+}
