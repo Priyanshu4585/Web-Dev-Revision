@@ -1,33 +1,62 @@
 import express from "express";
 import bodyParser from "body-parser";
+import pg from "pg";
 
 const app = express();
 const port = 3000;
 
+const db = new pg.Client({
+  user: "postgres",
+  host: "localhost",
+  database: "permalist",
+  password: "Priya@4585",
+  port: 5432,
+  });
+db.connect();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-let items = [
-  { id: 1, title: "Buy milk" },
-  { id: 2, title: "Finish homework" },
-];
+let items = [];
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
+  try {
+     const result = await db.query("SELECT * FROM items")
+items = result.rows;
   res.render("index.ejs", {
     listTitle: "Today",
     listItems: items,
   });
+ } catch (err) {
+    console.log(err);
+  }
 });
 
-app.post("/add", (req, res) => {
+app.post("/add", async (req, res) => {
   const item = req.body.newItem;
-  items.push({ title: item });
+  await db.query("INSERT INTO items (title) VALUES ($1)", [item]);
   res.redirect("/");
 });
 
-app.post("/edit", (req, res) => {});
+app.post("/edit", async (req, res) => {
+  var updatedId = req.body.updatedItemId;
+  var updatedTitle = req.body.updatedItemTitle;
+  try {
+    await db.query("UPDATE items SET title = ($1) WHERE id = $2",[updatedTitle,updatedId])
+  res.redirect("/");
+} catch (err) {
+    console.log(err);
+  }
+});
 
-app.post("/delete", (req, res) => {});
+app.post("/delete", async (req, res) => {
+  var deleteId = req.body.deleteItemId;
+  try {
+     await db.query("DELETE FROM items WHERE id = $1",[deleteId]);
+  res.redirect("/");
+} catch (err) {
+  console.log(err);
+}
+});
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
